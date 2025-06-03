@@ -1,1 +1,1 @@
-# curso-demonstracoes-mat
+# minicurso-demons-mat

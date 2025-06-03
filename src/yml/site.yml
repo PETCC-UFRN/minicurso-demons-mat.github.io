@@ -1,13 +1,13 @@
-name: Jekflix
-title: Jekflix | A blog theme for Jekyll
-description: Jekflix is a template for Jekyll inspired by Netflix and made by
-  Thiago Rossener.
+name: Introdução a demonstrações matemáticas
+title: Introdução a demonstrações matemáticas | Um minicurso do PET/CC (UFRN)
+description: Material utilizado no minicurso de introdução a demonstrações matemáticas
+  ofertado pelo Programa de Educação Tutorial de Ciência da Computação (UFRN).
 tags:
-  - blog
-  - template
-  - jekyll
-  - theme
-  - netlify
+  - logic
+  - UFRN
+  - academic
+  - mathematics
+  - computer science
 show_hero: true
 menu:
   - title: Home
@@ -16,9 +16,9 @@ menu:
     url: /about
   - title: Contact
     url: /contact
-email: youremail@test.com
+email: petcc@dimap.ufrn.br
 # See: https://disqus.com/
-disqus_username: disqus_username
+disqus_username:
 # Contact Form Setting
 # See: https://formspree.io/
-formspree_form_id: formspree_form_id
+formspree_form_id:

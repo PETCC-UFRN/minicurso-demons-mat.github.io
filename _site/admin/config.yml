@@ -165,24 +165,8 @@ collections:
         name: "github_username"
         widget: "string"
         required: false
-      - label: "Facebook Username"
-        name: "facebook_username"
-        widget: "string"
-        required: false
-      - label: "Twitter Username"
-        name: "twitter_username"
-        widget: "string"
-        required: false
       - label: "Instagram Username"
         name: "instagram_username"
-        widget: "string"
-        required: false
-      - label: "LinkedIn Username"
-        name: "linkedin_username"
-        widget: "string"
-        required: false
-      - label: "Medium Username"
-        name: "medium_username"
         widget: "string"
         required: false
   - label: "Settings"
@@ -251,24 +235,8 @@ collections:
             name: "github_username"
             widget: "string"
             required: false
-          - label: "Facebook Username"
-            name: "facebook_username"
-            widget: "string"
-            required: false
-          - label: "Twitter Username"
-            name: "twitter_username"
-            widget: "string"
-            required: false
           - label: "Instagram Username"
             name: "instagram_username"
-            widget: "string"
-            required: false
-          - label: "LinkedIn Username"
-            name: "linkedin_username"
-            widget: "string"
-            required: false
-          - label: "Medium Username"
-            name: "medium_username"
             widget: "string"
             required: false
       - label: "Theme"

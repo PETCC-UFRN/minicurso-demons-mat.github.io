@@ -1,22 +1,127 @@
 ---
 date: 2018-11-22 12:26:40
 layout: post
-title: Why books should be your priority?
+title: Demonstrações e Lean | Dia 4
 subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559822138/theme9_v273a9.jpg
-optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559822138/theme9_v273a9.jpg
+description: Nesse dia iremos nos aprofundar nos diferentes tipos de demonstrações matemáticas e como utilizar o provador de teoremas Lean.
+#image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559822138/theme9_v273a9.jpg
+#optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559822138/theme9_v273a9.jpg
 category: life
 tags:
-  - books
-  - read
+  - Demonstrações Matemáticas
+  - Provadores de teoremas
+  - Lean
 author: mranderson
 paginate: true
 ---
 
-Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+## As diferentes formas de demonstração:
 
-> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
+
+Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum.
+### Método de Demonstração 1:
+
+
+Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum.
+
+> Exemplo: (∀p legal)[p legal ⇒ p maneiro].
+
+### Método de Demonstração 2:
+
+
+Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum.
+
+> Exemplo: (∀ a : Person)(∃b : Person)[a gosta de b].
+
+### Método de Demonstração 3:
+
+
+Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum.
+
+> Exemplo: (∃x natalense)[x curte calcinha preta]
+
+### Método de Demonstração 4:
+
+
+Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum.
+
+## Ferramentas de Proof Assistant e Introdução ao Lean
+
+Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum.
+
+### Lean Overview
+
+Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum.
+
+### Quantificadores em Lean
+
+Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum.
+
+### Lean tactics
+
+Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum.
+
+#### Intro:
+Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum.
+```lean
+example : ∀ (x : U) (A : Set U), x ∈ A → x ∈ A := by {
+ intro x
+ intro A
+ intro h
+ exact h
+}
+```
+#### use:
+Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum.
+```lean
+example : ∀ (x : U) (A : Set U), x ∈ A → x ∈ A := by {
+ intro x
+ intro A
+ intro h
+ exact h
+}
+```
+#### have:
+Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum.
+```lean
+example : ∀ (x : U) (A : Set U), x ∈ A → x ∈ A := by {
+ intro x
+ intro A
+ intro h
+ exact h
+}
+```
+#### exact:
+Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum.
+```lean
+example : ∀ (x : U) (A : Set U), x ∈ A → x ∈ A := by {
+ intro x
+ intro A
+ intro h
+ exact h
+}
+```
+#### rw[]:
+Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum.
+```lean
+example : ∀ (x : U) (A : Set U), x ∈ A → x ∈ A := by {
+ intro x
+ intro A
+ intro h
+ exact h
+}
+```
+#### apply:
+Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum.
+```lean
+example : ∀ (x : U) (A : Set U), x ∈ A → x ∈ A := by {
+ intro x
+ intro A
+ intro h
+ exact h
+}
+```
+
 
 Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
 
@@ -51,15 +156,13 @@ Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est 
 
 Cum sociis natoque penatibus et magnis dis `code element` montes, nascetur ridiculus mus.
 
-```js
-// Example can be run directly in your JavaScript console
-
-// Create a function that takes two arguments and returns the sum of those arguments
-var adder = new Function("a", "b", "return a + b");
-
-// Call the function
-adder(2, 6);
-// > 8
+```lean
+example : ∀ (x : U) (A : Set U), x ∈ A → x ∈ A := by {
+ intro x
+ intro A
+ intro h
+ exact h
+}
 ```
 
 <!--page-->

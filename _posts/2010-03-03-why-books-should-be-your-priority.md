@@ -11,7 +11,7 @@ tags:
   - Demonstrações Matemáticas
   - Provadores de teoremas
   - Lean
-author: PET-CC
+author: mranderson
 paginate: true
 ---
 

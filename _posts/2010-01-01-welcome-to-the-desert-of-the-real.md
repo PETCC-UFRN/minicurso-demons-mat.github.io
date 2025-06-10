@@ -1,5 +1,5 @@
 ---
-date: 2025-03-06 23:48:05
+date: 2025-06-08 23:48:05
 layout: post
 title: Curso de Iniciação a Demonstrações Matemáticas
 subtitle: 'Seja bem vindo ao curso que vai transformar sua visão da matemática para a computação!'

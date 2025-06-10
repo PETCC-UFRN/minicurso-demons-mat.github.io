@@ -171,31 +171,31 @@
     
     
         <url>
-            <loc>http://localhost:4000/why-books-should-be-your-priority/</loc>
-            <changefreq>weekly</changefreq>
-            <priority>0.8</priority>
-            <lastmod>2025-06-07</lastmod>
-        </url>
-    
-        <url>
             <loc>http://localhost:4000/welcome-to-the-desert-of-the-real/</loc>
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>
-            <lastmod>2025-03-06</lastmod>
+            <lastmod>2025-06-08</lastmod>
         </url>
     
         <url>
             <loc>http://localhost:4000/welcome-to-the-desert-of-the-real/2/</loc>
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>
-            <lastmod>2025-03-06</lastmod>
+            <lastmod>2025-06-08</lastmod>
         </url>
     
         <url>
             <loc>http://localhost:4000/welcome-to-the-desert-of-the-real/view-all/</loc>
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>
-            <lastmod>2025-03-06</lastmod>
+            <lastmod>2025-06-08</lastmod>
+        </url>
+    
+        <url>
+            <loc>http://localhost:4000/why-books-should-be-your-priority/</loc>
+            <changefreq>weekly</changefreq>
+            <priority>0.8</priority>
+            <lastmod>2025-06-07</lastmod>
         </url>
     
         <url>

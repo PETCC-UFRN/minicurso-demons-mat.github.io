@@ -56,6 +56,11 @@ Imagine que apartir de uma hipotese seja possível de chegar na conclusão de qu
 
 >Exemplo: -INCOMPLETO-
 
+### Demonstração por indução/recursão
+
+Podemos utilizar da recursão para demonstrar algumas propriedades desejadas. Para isso, precisamos ter um passo base e um passo recursivo:
+ >Exemplo: -INCOMPLETO-
+ 
 ## Ferramentas de Proof Assistant e Introdução ao Lean
 
 Já pensou se nossas demonstrações matemáticas fossem cercadas de incertezas, e se pudessem estar erradas por causa de erros ou desvios? Quais seriam as consequências disso nas aplicações que dependem dessas demonstrações? BOOM!
@@ -65,7 +70,6 @@ Foi a partir dessas dúvidas que surgiram ferramentas que ajudam nas demonstraç
 O provador de teoremas que vamos usar se chama Lean, um sistema criado no Brasil e que hoje é utilizado pela comunidade matemática internacional.
 
 O Lean é uma linguagem de programação que funciona tanto como linguagem funcional quanto como provador de teoremas.
-
 
 ### Lean Overview
 

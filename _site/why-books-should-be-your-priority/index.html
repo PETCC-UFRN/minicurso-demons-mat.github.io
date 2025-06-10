@@ -157,19 +157,19 @@
                 <p class="post-info">
                     
                         <svg class="icon-calendar" id="date"><use xlink:href="#icon-calendar"></use></svg>
-                        <time class="date" datetime="2018-11-22T09:26:40-03:00">
+                        <time class="date" datetime="2025-06-07T09:26:40-03:00">
                             
 
 
-November 22, 2018
+June 7, 2025
 
                         </time>
                     
                     <svg id="clock" class="icon-clock"><use xlink:href="#icon-clock"></use></svg>
-                    <span>7 min to read</span>
+                    <span>9 min to read</span>
                 </p>
                 <h1 class="post-title">Demonstrações e Lean | Dia 4</h1>
-                <p class="post-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p class="post-subtitle">Se aprofundando em Demonstrações Matemáticas e entendendo a praticidade dos provadores de teoremas.</p>
 
                 
 
@@ -182,75 +182,86 @@ November 22, 2018
 
                 <h2 id="as-diferentes-formas-de-demonstração">As diferentes formas de demonstração:</h2>
 
-<p>Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. <em>Aenean eu leo quam.</em> Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-<h3 id="método-de-demonstração-1">Método de Demonstração 1:</h3>
+<p>Existem diferentes maneiras de se demonstrar algo na matemática, e podemos dividí-las em algumas categorias para facilitar nosso aprendizado.</p>
 
-<p>Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. <em>Aenean eu leo quam.</em> Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+<h3 id="demonstração-por-força-bruta">Demonstração por força bruta:</h3>
 
-<blockquote>
-  <p>Exemplo: (∀p legal)[p legal ⇒ p maneiro].</p>
-</blockquote>
-
-<h3 id="método-de-demonstração-2">Método de Demonstração 2:</h3>
-
-<p>Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. <em>Aenean eu leo quam.</em> Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+<p>O método mais simples para demonstrações pequenas, que dependem de poucos casos específicos.</p>
 
 <blockquote>
-  <p>Exemplo: (∀ a : Person)(∃b : Person)[a gosta de b].</p>
+  <p>Exemplo: demonstrar que todos os membros do conjunto de naturais {1, 3, 15,78, 6, 4, 2} são menores do que 80.</p>
 </blockquote>
 
-<h3 id="método-de-demonstração-3">Método de Demonstração 3:</h3>
+<p>Imagine ter que demonstrar uma propriedade para um conjunto de 500 mil elementos!</p>
 
-<p>Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. <em>Aenean eu leo quam.</em> Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+<p>Como conseguiriamos utilizar isso para demonstrar uma propriedade de um conjunto infinito? Spoiler: Não dá!</p>
+
+<h3 id="demonstração-direta">Demonstração direta:</h3>
+
+<p>É chamada de demonstração direta quando conseguimos demonstrar o nosso alvo apenas utilizando os quantificadores em sua forma “padrão” e os dados que temos ou obtivemos.</p>
 
 <blockquote>
-  <p>Exemplo: (∃x natalense)[x curte calcinha preta]</p>
+  <p>Exemplo: utilizar de exemplo alguma demonstração simples feita no dia 3 sobre conjuntos.</p>
 </blockquote>
 
-<h3 id="método-de-demonstração-4">Método de Demonstração 4:</h3>
+<h3 id="demonstração-por-escolha-ou-contraexemplo">Demonstração por escolha ou contra-exemplo:</h3>
 
-<p>Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. <em>Aenean eu leo quam.</em> Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+<p>Para lidar com o quantificador do existêncial (∃), basta escolhermos alguém que satisfaça suas condições necessárias. A mesma coisa acontece quando queremos demonstrar a negação ou refutar um para todo (∀), basta escolhermos um contra-exemplo que <strong>não</strong> satisfaça tais propriedades.</p>
+
+<blockquote>
+  <p>Exemplo: (∃p ∈ Primos)[p par]</p>
+</blockquote>
+
+<blockquote>
+  <p>Exemplo: (∀ p ∈ Primos)[p ímpar];</p>
+</blockquote>
+
+<h3 id="demonstração-por-contradição-boom">Demonstração por contradição (BOOM!):</h3>
+
+<p>Imagine que apartir de uma hipotese seja possível de chegar na conclusão de que 0 = 1? Assim é chamada a demonstração por contradição. Tendo nossas hipotéses, podemos supor por contradição que o alvo é falso e tentar chegar a algo claramente falso.</p>
+
+<blockquote>
+  <p>Exemplo: -INCOMPLETO-</p>
+</blockquote>
 
 <h2 id="ferramentas-de-proof-assistant-e-introdução-ao-lean">Ferramentas de Proof Assistant e Introdução ao Lean</h2>
 
-<p>Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. <em>Aenean eu leo quam.</em> Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+<p>Já pensou se nossas demonstrações matemáticas fossem cercadas de incertezas, e se pudessem estar erradas por causa de erros ou desvios? Quais seriam as consequências disso nas aplicações que dependem dessas demonstrações? BOOM!</p>
+
+<p>Foi a partir dessas dúvidas que surgiram ferramentas que ajudam nas demonstrações matemáticas — os chamados Proof Assistants, ou provadores de teoremas.</p>
+
+<p>O provador de teoremas que vamos usar se chama Lean, um sistema criado no Brasil e que hoje é utilizado pela comunidade matemática internacional.</p>
+
+<p>O Lean é uma linguagem de programação que funciona tanto como linguagem funcional quanto como provador de teoremas.</p>
 
 <h3 id="lean-overview">Lean Overview</h3>
 
-<p>Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. <em>Aenean eu leo quam.</em> Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+<p>Sabe toda aquela conversa sobre alvo, dados e hipóteses? O Lean tem uma aba de visão geral que ajuda bastante, mostrando qual é o alvo a ser demonstrado, os dados disponíveis, as hipóteses e as variáveis que estão no escopo.</p>
+
+<blockquote>
+  <p>PRINT MOSTRANDO O OVERVIEW DO LEAN.</p>
+</blockquote>
+
+<blockquote>
+  <p>Talvez pedir para os alunos abrirem o live-lang para verem o Lean Overview funcionando(?).</p>
+</blockquote>
 
 <h3 id="quantificadores-em-lean">Quantificadores em Lean</h3>
 
-<p>Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. <em>Aenean eu leo quam.</em> Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+<p>Em Lean, os quantificadores funcionam da mesma maneira na qual foram abordados anteriormente.</p>
+
+<blockquote>
+  <p>PRINT MOSTRANDO A CARA DE UMA DEMONSTRAÇÃO EM LEAN, COM FOCO NOS QUANTIFICADORES.</p>
+</blockquote>
 
 <h3 id="lean-tactics">Lean tactics</h3>
 
-<p>Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. <em>Aenean eu leo quam.</em> Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+<p>As táticas do Lean são os “comandos” utilizados nas demonstrações. A ideia é bem parecida com o que fizemos até então nas demonstrações feitas em sala. Para cada quantificador, temos maneiras diferentes de atacá-los ou utilizá-los. Algumas táticas também são utilizadas para criarmos novos dados e terminar a demonstração.</p>
 
-<h4 id="intro">Intro:</h4>
+<h4 id="intro">intro:</h4>
 
-<p>Etiam porta <strong>sem malesuada magna</strong> mollis euismod. Cras mattis consectetur purus sit amet fermentum.</p>
-<div class="language-lean highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">example</span> : <span class="o">∀</span> (<span class="n">x</span> : <span class="n">U</span>) (<span class="n">A</span> : <span class="n">Set</span> <span class="n">U</span>), <span class="n">x</span> <span class="err">∈</span> <span class="n">A</span> <span class="o">→</span> <span class="n">x</span> <span class="err">∈</span> <span class="n">A</span> :<span class="o">~|=|</span> <span class="k">by</span> <span class="err">{</span>
- <span class="n">intro</span> <span class="n">x</span>
- <span class="n">intro</span> <span class="n">A</span>
- <span class="n">intro</span> <span class="n">h</span>
- <span class="n">exact</span> <span class="n">h</span>
-<span class="err">}</span>
-</code></pre></div></div>
-<h4 id="use">use:</h4>
-
-<p>Etiam porta <strong>sem malesuada magna</strong> mollis euismod. Cras mattis consectetur purus sit amet fermentum.</p>
-<div class="language-lean highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">example</span> : <span class="o">∀</span> (<span class="n">x</span> : <span class="n">U</span>) (<span class="n">A</span> : <span class="n">Set</span> <span class="n">U</span>), <span class="n">x</span> <span class="err">∈</span> <span class="n">A</span> <span class="o">→</span> <span class="n">x</span> <span class="err">∈</span> <span class="n">A</span> :<span class="o">~|=|</span> <span class="k">by</span> <span class="err">{</span>
- <span class="n">intro</span> <span class="n">x</span>
- <span class="n">intro</span> <span class="n">A</span>
- <span class="n">intro</span> <span class="n">h</span>
- <span class="n">exact</span> <span class="n">h</span>
-<span class="err">}</span>
-</code></pre></div></div>
-<h4 id="have">have:</h4>
-
-<p>Etiam porta <strong>sem malesuada magna</strong> mollis euismod. Cras mattis consectetur purus sit amet fermentum.</p>
-<div class="language-lean highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">example</span> : <span class="o">∀</span> (<span class="n">x</span> : <span class="n">U</span>) (<span class="n">A</span> : <span class="n">Set</span> <span class="n">U</span>), <span class="n">x</span> <span class="err">∈</span> <span class="n">A</span> <span class="o">→</span> <span class="n">x</span> <span class="err">∈</span> <span class="n">A</span> :<span class="o">~|=|</span> <span class="k">by</span> <span class="err">{</span>
+<p><code class="language-plaintext highlighter-rouge">intro</code> é a maneira de atacar um alvo da forma (∀). Numa demonstração feita no papel escreveríamos “Seja x”.</p>
+<div class="language-lean highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">example</span> : <span class="o">∀</span> (<span class="n">x</span> : α) (<span class="n">A</span> : <span class="n">Set</span> α), <span class="n">x</span> <span class="err">∈</span> <span class="n">A</span> <span class="o">→</span> <span class="n">x</span> <span class="err">∈</span> <span class="n">A</span> :<span class="o">~|=|</span> <span class="k">by</span> <span class="err">{</span>
  <span class="n">intro</span> <span class="n">x</span>
  <span class="n">intro</span> <span class="n">A</span>
  <span class="n">intro</span> <span class="n">h</span>
@@ -259,32 +270,66 @@ November 22, 2018
 </code></pre></div></div>
 <h4 id="exact">exact:</h4>
 
-<p>Etiam porta <strong>sem malesuada magna</strong> mollis euismod. Cras mattis consectetur purus sit amet fermentum.</p>
-<div class="language-lean highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">example</span> : <span class="o">∀</span> (<span class="n">x</span> : <span class="n">U</span>) (<span class="n">A</span> : <span class="n">Set</span> <span class="n">U</span>), <span class="n">x</span> <span class="err">∈</span> <span class="n">A</span> <span class="o">→</span> <span class="n">x</span> <span class="err">∈</span> <span class="n">A</span> :<span class="o">~|=|</span> <span class="k">by</span> <span class="err">{</span>
- <span class="n">intro</span> <span class="n">x</span>
- <span class="n">intro</span> <span class="n">A</span>
- <span class="n">intro</span> <span class="n">h</span>
- <span class="n">exact</span> <span class="n">h</span>
-<span class="err">}</span>
-</code></pre></div></div>
-<h4 id="rw">rw[]:</h4>
+<p><code class="language-plaintext highlighter-rouge">exact _</code> é a principal maneira de terminar uma demonstração. Quando temos em nossos dados a coisa que queremos demonstrar, usamos <code class="language-plaintext highlighter-rouge">exact (hipótese)</code>.</p>
 
-<p>Etiam porta <strong>sem malesuada magna</strong> mollis euismod. Cras mattis consectetur purus sit amet fermentum.</p>
-<div class="language-lean highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">example</span> : <span class="o">∀</span> (<span class="n">x</span> : <span class="n">U</span>) (<span class="n">A</span> : <span class="n">Set</span> <span class="n">U</span>), <span class="n">x</span> <span class="err">∈</span> <span class="n">A</span> <span class="o">→</span> <span class="n">x</span> <span class="err">∈</span> <span class="n">A</span> :<span class="o">~|=|</span> <span class="k">by</span> <span class="err">{</span>
- <span class="n">intro</span> <span class="n">x</span>
- <span class="n">intro</span> <span class="n">A</span>
- <span class="n">intro</span> <span class="n">h</span>
- <span class="n">exact</span> <span class="n">h</span>
+<h4 id="use">use:</h4>
+
+<p><code class="language-plaintext highlighter-rouge">use</code> é a maneira de atacar um alvo de forma (∃). Numa demonstração no papel diríamos “uso x”.</p>
+<div class="language-lean highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">example</span> : <span class="o">∃</span> <span class="n">x</span> : <span class="n">Nat</span>, <span class="n">x</span> <span class="err">∈</span> <span class="err">{</span><span class="n">n</span> <span class="o">|</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="err">}</span> :<span class="o">~|=|</span> <span class="k">by</span> <span class="err">{</span>               
+<span class="n">use</span> <span class="mi">1</span>
+<span class="n">exact</span> <span class="n">Nat</span><span class="o">.</span><span class="n">one_pos</span>  
 <span class="err">}</span>
 </code></pre></div></div>
+<blockquote>
+  <p>Nat.one_pos é o axioma que define que o natural 1 é maior que o natural 0.</p>
+</blockquote>
+
+<h4 id="have">have:</h4>
+
+<p><code class="language-plaintext highlighter-rouge">have</code> é a maneira de criar um dado novo utilizando dados que já temos. Note que você não pode “criar” um dado do nada, precisa demonstrá-lo!</p>
+<div class="language-lean highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">example</span> <span class="err">{</span>α<span class="err">}</span> : <span class="o">∀</span> (<span class="n">x</span> : α ) (<span class="n">A</span> <span class="n">B</span> <span class="n">C</span> : <span class="n">Set</span> α ), <span class="n">A</span> <span class="err">⊆</span> <span class="n">B</span> <span class="o">→</span> <span class="n">B</span> <span class="err">⊆</span> <span class="n">C</span> <span class="o">→</span> <span class="n">x</span> <span class="err">∈</span> <span class="n">A</span> <span class="o">→</span> <span class="n">x</span> <span class="err">∈</span> <span class="n">C</span> :<span class="o">~|=|</span> <span class="k">by</span> <span class="err">{</span>
+<span class="n">intro</span> <span class="n">x</span>
+<span class="n">intro</span> <span class="n">A</span> <span class="n">B</span> <span class="n">C</span>
+<span class="n">intro</span> <span class="n">h1</span>
+<span class="n">intro</span> <span class="n">h2</span>
+<span class="n">intro</span> <span class="n">h3</span>
+
+<span class="k">have</span> <span class="n">h4</span> : <span class="n">x</span> <span class="err">∈</span> <span class="n">B</span> :<span class="o">~|=|</span> <span class="n">h1</span> <span class="n">h3</span>
+<span class="k">have</span> <span class="n">h5</span> : <span class="n">x</span> <span class="err">∈</span> <span class="n">C</span> :<span class="o">~|=|</span> <span class="n">h2</span> <span class="n">h4</span>
+<span class="n">exact</span> <span class="n">h5</span>
+<span class="err">}</span>
+</code></pre></div></div>
+<p>A sintaxe funciona da seguinte maneira:</p>
+
+<p><code class="language-plaintext highlighter-rouge">nome_da_hipótese : hipótese := demonstração</code></p>
+
+<h4 id="rw">rw[_]:</h4>
+
+<p>Quando queremos substituir algo no nosso alvo ou em alguma hipótese por algo que já temos nos nossos dados, podemos usar a tática <code class="language-plaintext highlighter-rouge">rw [dado]</code>, que reescreve o alvo ou a hipótese.</p>
+<div class="language-lean highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">example</span> <span class="err">{</span>α<span class="err">}</span> : <span class="o">∀</span> (<span class="n">x</span> : α) (<span class="n">A</span> <span class="n">B</span> : <span class="n">Set</span> α), <span class="n">B</span> <span class="o">~|=|</span> <span class="n">A</span> <span class="o">→</span> <span class="n">x</span> <span class="err">∈</span> <span class="n">A</span> <span class="o">→</span> <span class="n">x</span> <span class="err">∈</span> <span class="n">B</span> :<span class="o">~|=|</span> <span class="k">by</span> <span class="err">{</span>
+<span class="n">intro</span> <span class="n">x</span>
+<span class="n">intro</span> <span class="n">A</span> <span class="n">B</span>
+<span class="n">intro</span> <span class="n">hipotese</span><span class="o">.</span><span class="n">BA</span>
+<span class="n">intro</span> <span class="n">hipotese</span><span class="o">.</span><span class="n">A</span>
+<span class="n">rw</span>[<span class="n">hipotese</span><span class="o">.</span><span class="n">BA</span>]
+<span class="n">exact</span> <span class="n">hipotese</span><span class="o">.</span><span class="n">A</span>
+<span class="err">}</span>
+</code></pre></div></div>
+
 <h4 id="apply">apply:</h4>
 
-<p>Etiam porta <strong>sem malesuada magna</strong> mollis euismod. Cras mattis consectetur purus sit amet fermentum.</p>
-<div class="language-lean highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">example</span> : <span class="o">∀</span> (<span class="n">x</span> : <span class="n">U</span>) (<span class="n">A</span> : <span class="n">Set</span> <span class="n">U</span>), <span class="n">x</span> <span class="err">∈</span> <span class="n">A</span> <span class="o">→</span> <span class="n">x</span> <span class="err">∈</span> <span class="n">A</span> :<span class="o">~|=|</span> <span class="k">by</span> <span class="err">{</span>
- <span class="n">intro</span> <span class="n">x</span>
- <span class="n">intro</span> <span class="n">A</span>
- <span class="n">intro</span> <span class="n">h</span>
- <span class="n">exact</span> <span class="n">h</span>
+<p><code class="language-plaintext highlighter-rouge">apply</code> é a tática que serve para aplicarmos uma hipótese em nosso alvo ou em outra hipótese, mudando sua forma.</p>
+
+<div class="language-lean highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">example</span> <span class="err">{</span>α<span class="err">}</span> : <span class="o">∀</span> (<span class="n">x</span> : α ) (<span class="n">A</span> <span class="n">B</span> <span class="n">C</span> : <span class="n">Set</span> α ), <span class="n">A</span> <span class="err">⊆</span> <span class="n">B</span> <span class="o">→</span> <span class="n">B</span> <span class="err">⊆</span> <span class="n">C</span> <span class="o">→</span> <span class="n">x</span> <span class="err">∈</span> <span class="n">A</span> <span class="o">→</span> <span class="n">x</span> <span class="err">∈</span> <span class="n">C</span> :<span class="o">~|=|</span> <span class="k">by</span> <span class="err">{</span>
+<span class="n">intro</span> <span class="n">x</span>
+<span class="n">intro</span> <span class="n">A</span> <span class="n">B</span> <span class="n">C</span>
+<span class="n">intro</span> <span class="n">h1</span>
+<span class="n">intro</span> <span class="n">h2</span>
+<span class="n">intro</span> <span class="n">h3</span>
+
+<span class="n">apply</span> <span class="n">h2</span>
+<span class="n">apply</span> <span class="n">h1</span>
+<span class="n">exact</span> <span class="n">h3</span>
 <span class="err">}</span>
 </code></pre></div></div>
 
@@ -421,29 +466,29 @@ November 22, 2018
                         
                         
                             <li>
+                                <a href="/smoke-alert/">
+                                    
+                                        <img src="https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559824021/theme12_e0vxlr.jpg">
+                                    
+                                    <h3>Smoke alert</h3>
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/welcome-to-the-desert-of-the-real/">
+                                    
+                                        <img src="https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559821647/theme6_qeeojf.jpg">
+                                    
+                                    <h3>Curso de Iniciação a Demonstrações Matemáticas</h3>
+                                </a>
+                            </li>
+                        
+                            <li>
                                 <a href="/candy-candies-candy/">
                                     
                                         <img src="https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559822137/theme11_vei7iw.jpg">
                                     
                                     <h3>Candy, candies, candy!</h3>
-                                </a>
-                            </li>
-                        
-                            <li>
-                                <a href="/the-quick-brown-fox-jumps-over-a-lazy-dog/">
-                                    
-                                        <img src="https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1506079212/jekflix-capa_vfhuzh.png">
-                                    
-                                    <h3>The quick brown fox jumps over a lazy dog</h3>
-                                </a>
-                            </li>
-                        
-                            <li>
-                                <a href="/a-star-has-fallen-from-the-sky-and-the-cat-ate-it/">
-                                    
-                                        <img src="https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559822138/theme10_xenudc.jpg">
-                                    
-                                    <h3>A star has fallen from the sky and the cat ate it</h3>
                                 </a>
                             </li>
                         
@@ -455,7 +500,7 @@ November 22, 2018
 
         <!-- Add time bar only for pages without pagination -->
         
-            <div class="time-bar" data-minutes="7">
+            <div class="time-bar" data-minutes="9">
     <span class="time-completed"></span>
     <span class="time-remaining"></span>
     <div class="bar">
@@ -508,75 +553,6 @@ November 22, 2018
 </section>
 
         
-
-  <section class="author">
-    <div class="details">
-      
-        <img class="img-rounded" src="/assets/img/uploads/profile.png" alt="Mr. Anderson">
-      
-      <p class="def">Author</p>
-      <h3 class="name">
-        <a href="/authors/mranderson/">Mr. Anderson</a>
-      </h3>
-      <p class="desc">Bulletproof hacker passionate about leather clothes.</p>
-      <p>
-        
-          <a href="https://github.com/github_username" title="Github">
-            <svg><use xlink:href="#icon-github"></use></svg>
-          </a>
-        
-        
-          <a href="https://www.facebook.com/facebook_username" title="Facebook">
-            <svg><use xlink:href="#icon-facebook"></use></svg>
-          </a>
-        
-        
-          <a href="https://twitter.com/twitter_username" title="Twitter">
-            <svg><use xlink:href="#icon-twitter"></use></svg>
-          </a>
-        
-        
-          <a href="https://medium.com/@medium_username" title="Medium">
-            <svg><use xlink:href="#icon-medium"></use></svg>
-          </a>
-        
-        
-          <a href="https://www.instagram.com/instagram_username" title="Instagram">
-            <svg><use xlink:href="#icon-instagram"></use></svg>
-          </a>
-        
-        
-          <a href="https://www.linkedin.com/in/linkedin_username" title="LinkedIn">
-            <svg><use xlink:href="#icon-linkedin"></use></svg>
-          </a>
-        
-      </p>
-    </div>
-  </section>
-
-  
-  
-  
-  
-  
-  
-  
-
-  <script type="application/ld+json">
-  {
-      "@context": "http://schema.org",
-      "@type": "Person",
-      "name": "Mr. Anderson",
-      
-      "image": "/assets/img/uploads/profile.png",
-      
-      "jobTitle": "The One",
-      "url": "http://localhost:4000/authors/mranderson/",
-      "sameAs": [
-        "https://github.com/github_username","https://www.facebook.com/facebook_username","https://twitter.com/twitter_username","https://medium.com/@medium_username","https://www.instagram.com/instagram_username","https://www.linkedin.com/in/linkedin_username"
-      ]
-  }
-  </script>
 
 
         
@@ -724,81 +700,92 @@ November 22, 2018
             "@context": "http://schema.org",
             "@type": "BlogPosting",
             "name": "Demonstrações e Lean | Dia 4",
-            "headline": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+            "headline": "Se aprofundando em Demonstrações Matemáticas e entendendo a praticidade dos provadores de teoremas.",
             "description": "Nesse dia iremos nos aprofundar nos diferentes tipos de demonstrações matemáticas e como utilizar o provador de teoremas Lean.",
             "image": "",
             "url": "http://localhost:4000/why-books-should-be-your-priority/",
             "articleBody": "As diferentes formas de demonstração:
 
-Cas sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-Método de Demonstração 1:
+Existem diferentes maneiras de se demonstrar algo na matemática, e podemos dividí-las em algumas categorias para facilitar nosso aprendizado.
 
-Cas sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+Demonstração por força bruta:
 
-
-  Exemplo: (∀p legal)[p legal ⇒ p maneiro].
+O método mais simples para demonstrações pequenas, que dependem de poucos casos específicos.
 
 
-Método de Demonstração 2:
-
-Cas sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+  Exemplo: demonstrar que todos os membros do conjunto de naturais {1, 3, 15,78, 6, 4, 2} são menores do que 80.
 
 
-  Exemplo: (∀ a : Person)(∃b : Person)[a gosta de b].
+Imagine ter que demonstrar uma propriedade para um conjunto de 500 mil elementos!
+
+Como conseguiriamos utilizar isso para demonstrar uma propriedade de um conjunto infinito? Spoiler: Não dá!
+
+Demonstração direta:
+
+É chamada de demonstração direta quando conseguimos demonstrar o nosso alvo apenas utilizando os quantificadores em sua forma “padrão” e os dados que temos ou obtivemos.
 
 
-Método de Demonstração 3:
-
-Cas sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+  Exemplo: utilizar de exemplo alguma demonstração simples feita no dia 3 sobre conjuntos.
 
 
-  Exemplo: (∃x natalense)[x curte calcinha preta]
+Demonstração por escolha ou contra-exemplo:
+
+Para lidar com o quantificador do existêncial (∃), basta escolhermos alguém que satisfaça suas condições necessárias. A mesma coisa acontece quando queremos demonstrar a negação ou refutar um para todo (∀), basta escolhermos um contra-exemplo que não satisfaça tais propriedades.
 
 
-Método de Demonstração 4:
+  Exemplo: (∃p ∈ Primos)[p par]
 
-Cas sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+
+
+  Exemplo: (∀ p ∈ Primos)[p ímpar];
+
+
+Demonstração por contradição (BOOM!):
+
+Imagine que apartir de uma hipotese seja possível de chegar na conclusão de que 0 = 1? Assim é chamada a demonstração por contradição. Tendo nossas hipotéses, podemos supor por contradição que o alvo é falso e tentar chegar a algo claramente falso.
+
+
+  Exemplo: -INCOMPLETO-
+
 
 Ferramentas de Proof Assistant e Introdução ao Lean
 
-Cas sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+Já pensou se nossas demonstrações matemáticas fossem cercadas de incertezas, e se pudessem estar erradas por causa de erros ou desvios? Quais seriam as consequências disso nas aplicações que dependem dessas demonstrações? BOOM!
+
+Foi a partir dessas dúvidas que surgiram ferramentas que ajudam nas demonstrações matemáticas — os chamados Proof Assistants, ou provadores de teoremas.
+
+O provador de teoremas que vamos usar se chama Lean, um sistema criado no Brasil e que hoje é utilizado pela comunidade matemática internacional.
+
+O Lean é uma linguagem de programação que funciona tanto como linguagem funcional quanto como provador de teoremas.
 
 Lean Overview
 
-Cas sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+Sabe toda aquela conversa sobre alvo, dados e hipóteses? O Lean tem uma aba de visão geral que ajuda bastante, mostrando qual é o alvo a ser demonstrado, os dados disponíveis, as hipóteses e as variáveis que estão no escopo.
+
+
+  PRINT MOSTRANDO O OVERVIEW DO LEAN.
+
+
+
+  Talvez pedir para os alunos abrirem o live-lang para verem o Lean Overview funcionando(?).
+
 
 Quantificadores em Lean
 
-Cas sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+Em Lean, os quantificadores funcionam da mesma maneira na qual foram abordados anteriormente.
+
+
+  PRINT MOSTRANDO A CARA DE UMA DEMONSTRAÇÃO EM LEAN, COM FOCO NOS QUANTIFICADORES.
+
 
 Lean tactics
 
-Cas sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+As táticas do Lean são os “comandos” utilizados nas demonstrações. A ideia é bem parecida com o que fizemos até então nas demonstrações feitas em sala. Para cada quantificador, temos maneiras diferentes de atacá-los ou utilizá-los. Algumas táticas também são utilizadas para criarmos novos dados e terminar a demonstração.
 
-Intro:
+intro:
 
-Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum.
-example : ∀ (x : U) (A : Set U), x ∈ A → x ∈ A :~|=| by {
- intro x
- intro A
- intro h
- exact h
-}
-
-use:
-
-Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum.
-example : ∀ (x : U) (A : Set U), x ∈ A → x ∈ A :~|=| by {
- intro x
- intro A
- intro h
- exact h
-}
-
-have:
-
-Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum.
-example : ∀ (x : U) (A : Set U), x ∈ A → x ∈ A :~|=| by {
+intro é a maneira de atacar um alvo da forma (∀). Numa demonstração feita no papel escreveríamos “Seja x”.
+example : ∀ (x : α) (A : Set α), x ∈ A → x ∈ A :~|=| by {
  intro x
  intro A
  intro h
@@ -807,32 +794,66 @@ example : ∀ (x : U) (A : Set U), x ∈ A → x ∈ A :~|=| by {
 
 exact:
 
-Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum.
-example : ∀ (x : U) (A : Set U), x ∈ A → x ∈ A :~|=| by {
- intro x
- intro A
- intro h
- exact h
+exact _ é a principal maneira de terminar uma demonstração. Quando temos em nossos dados a coisa que queremos demonstrar, usamos exact (hipótese).
+
+use:
+
+use é a maneira de atacar um alvo de forma (∃). Numa demonstração no papel diríamos “uso x”.
+example : ∃ x : Nat, x ∈ {n | n &amp;gt; 0} :~|=| by {               
+use 1
+exact Nat.one_pos  
 }
 
-rw[]:
 
-Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum.
-example : ∀ (x : U) (A : Set U), x ∈ A → x ∈ A :~|=| by {
- intro x
- intro A
- intro h
- exact h
+  Nat.one_pos é o axioma que define que o natural 1 é maior que o natural 0.
+
+
+have:
+
+have é a maneira de criar um dado novo utilizando dados que já temos. Note que você não pode “criar” um dado do nada, precisa demonstrá-lo!
+example {α} : ∀ (x : α ) (A B C : Set α ), A ⊆ B → B ⊆ C → x ∈ A → x ∈ C :~|=| by {
+intro x
+intro A B C
+intro h1
+intro h2
+intro h3
+
+have h4 : x ∈ B :~|=| h1 h3
+have h5 : x ∈ C :~|=| h2 h4
+exact h5
 }
+
+A sintaxe funciona da seguinte maneira:
+
+nome_da_hipótese : hipótese := demonstração
+
+rw[_]:
+
+Quando queremos substituir algo no nosso alvo ou em alguma hipótese por algo que já temos nos nossos dados, podemos usar a tática rw [dado], que reescreve o alvo ou a hipótese.
+example {α} : ∀ (x : α) (A B : Set α), B ~|=| A → x ∈ A → x ∈ B :~|=| by {
+intro x
+intro A B
+intro hipotese.BA
+intro hipotese.A
+rw[hipotese.BA]
+exact hipotese.A
+}
+
 
 apply:
 
-Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum.
-example : ∀ (x : U) (A : Set U), x ∈ A → x ∈ A :~|=| by {
- intro x
- intro A
- intro h
- exact h
+apply é a tática que serve para aplicarmos uma hipótese em nosso alvo ou em outra hipótese, mudando sua forma.
+
+example {α} : ∀ (x : α ) (A B C : Set α ), A ⊆ B → B ⊆ C → x ∈ A → x ∈ C :~|=| by {
+intro x
+intro A B C
+intro h1
+intro h2
+intro h3
+
+apply h2
+apply h1
+exact h3
 }
 
 
@@ -955,11 +976,11 @@ Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, conse
 Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
 
 ",
-            "wordcount": "1318",
+            "wordcount": "1702",
             "inLanguage": "en",
-            "dateCreated": "2018-11-22/",
-            "datePublished": "2018-11-22/",
-            "dateModified": "2018-11-22/",
+            "dateCreated": "2025-06-07/",
+            "datePublished": "2025-06-07/",
+            "dateModified": "2025-06-07/",
             "author": {
                 "@type": "Person",
                 "name": "Mr. Anderson",
@@ -984,8 +1005,8 @@ Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur e
                 }
             },
             "mainEntityOfPage": "True",
-            "genre": "life",
-            "articleSection": "life",
+            "genre": "Math",
+            "articleSection": "Math",
             "keywords": ["Demonstrações Matemáticas","Provadores de teoremas","Lean"]
         }
         </script>

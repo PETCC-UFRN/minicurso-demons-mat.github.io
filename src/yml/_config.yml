@@ -22,6 +22,10 @@ paginate_path: "/page/:num/"
 show_get_theme_btn: true
 use_logo: false
 
+# posts.yml
+two_columns_layout: false
+show_time_bar: false
+
 # Content paginator
 paginate_content:
   enabled: true

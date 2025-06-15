@@ -1,18 +1,17 @@
 ---
 date: 2025-06-07 12:26:40
 layout: post
-title: Demonstrações e Lean | Dia 4
+title: Dia 4 | Demonstrações e Lean
 subtitle: Se aprofundando em Demonstrações Matemáticas e entendendo a praticidade dos provadores de teoremas.
 description: Nesse dia iremos nos aprofundar nos diferentes tipos de demonstrações matemáticas e como utilizar o provador de teoremas Lean.
-#image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559822138/theme9_v273a9.jpg
-#optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559822138/theme9_v273a9.jpg
+image: /assets/img/uploads/logoleanpetcc.png
+optimized_image: /assets/img/uploads/petccleangrande.png
 category: Math
 tags:
   - Demonstrações Matemáticas
   - Provadores de teoremas
   - Lean
-author: mranderson
-paginate: true
+author: PET-CC
 ---
 
 ## As diferentes formas de demonstração:
